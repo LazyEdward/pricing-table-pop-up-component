@@ -13,3 +13,7 @@ npm run build
 ```
 
 The `dist` folder will be created, move to the `dist` folder
+
+## Demo
+
+https://lazyedward.github.io/pricing-table-pop-up-component/
