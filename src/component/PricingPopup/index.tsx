@@ -3,7 +3,6 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import { useState } from 'react'
 import ZoomableCard from '../ZoomableCard';
 import Banner from '../Banner';
 import CardContent from '../CardContent';
@@ -12,23 +11,19 @@ import { TBannerPricingInfo, TFeatureText } from '../type';
 import FeatureContainer from '../FeatureContainer';
 
 type TPricingPopupProp = {
+	isHover: boolean,
+	setIsHover: (isHover: boolean) => void,
 	features: string[],
 } & TBannerPricingInfo
 
-const PricingPopup = ({bannerType, bannerText, pricing, features} : TPricingPopupProp) => {
-
-  const [isHover, setIsHover] = useState(false);
-
-  const onHover = (isHover: boolean) => {
-    setIsHover(isHover)
-  }
+const PricingPopup = ({isHover, setIsHover, bannerType, bannerText, pricing, features} : TPricingPopupProp) => {
 
 	const getUIFeatureList = () : TFeatureText[] => {
 		return [...features.map(feature => ({alignRight: false, content: feature})), {alignRight: true, content: "+ Previous Plan"}]
 	}
 
 	return (
-		<ZoomableCard setIsHover={(isHover) => onHover(isHover)}>
+		<ZoomableCard isHover={isHover} setIsHover={(isHover) => setIsHover(isHover)}>
 			<Banner
 				bannerType={bannerType}
 				bannerText={bannerText}
@@ -47,6 +42,7 @@ const PricingPopup = ({bannerType, bannerText, pricing, features} : TPricingPopu
 }
 
 PricingPopup.defaultProps = {
+	isHover: false,
 	bannerText: 'Per Month',
 	pricing: null
 }

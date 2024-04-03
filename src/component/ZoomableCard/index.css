@@ -6,9 +6,17 @@
  */
 
 .zoomable-card-container {
-	@apply w-[190px] h-[342px] hover:w-[217px] hover:h-[390px] transition-all flex justify-center items-center
+	@apply w-[190px] h-[342px] transition-all flex justify-center items-center
+}
+
+.zoomable-card-container-hover {
+	@apply w-[217px] h-[390px]
 }
 
 .zoomable-card {
-	@apply w-[190px] h-[342px] hover:scale-[1.14] transition-all flex flex-col items-center drop-shadow
+	@apply w-[190px] h-[342px] transition-all flex flex-col items-center drop-shadow
+}
+
+.zoomable-card-hover {
+	@apply scale-[1.14]
 }

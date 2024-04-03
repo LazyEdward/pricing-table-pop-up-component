@@ -17,3 +17,7 @@ The `dist` folder will be created, move to the `dist` folder
 ## Demo
 
 https://lazyedward.github.io/pricing-table-pop-up-component/
+
+## Extra feature
+
+On `extra-features` branch, popup can also be triggered with arrow keys
