@@ -1,0 +1,10 @@
+/**
+ * Copyright (c) 2024 LazyEdward
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+ .banner-type {
+	@apply text-[22px] text-local-white
+ }

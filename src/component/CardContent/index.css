@@ -1,0 +1,14 @@
+/**
+ * Copyright (c) 2024 LazyEdward
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.card-content-container {
+	@apply w-full flex-1 flex justify-center bg-local-white
+}
+
+.card-content {
+	@apply pt-[18px] flex flex-col items-center
+}

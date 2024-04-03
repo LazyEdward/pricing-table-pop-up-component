@@ -1,0 +1,14 @@
+/**
+ * Copyright (c) 2024 LazyEdward
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.banner {
+	@apply w-full h-[139px] rounded-t-[4px] bg-gradient-to-bl from-local-blue-gradient-st to-local-blue-gradient-ed flex flex-col justify-center items-center
+}
+
+.banner-hover {
+	@apply bg-gradient-to-bl from-local-red-gradient-st to-local-red-gradient-ed
+}

@@ -1,0 +1,14 @@
+/**
+ * Copyright (c) 2024 LazyEdward
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.round-btn {
+	@apply w-[119px] h-[29px] rounded-[62px] box-border border-[1.2px] bg-transparent border-local-red text-[11.5px] text-local-red
+}
+
+.round-btn-hover {
+	@apply bg-local-red text-local-white
+}

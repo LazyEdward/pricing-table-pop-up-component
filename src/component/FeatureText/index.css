@@ -1,0 +1,18 @@
+/**
+ * Copyright (c) 2024 LazyEdward
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.feature-text {
+	@apply pb-[8px] text-[10px] text-local-dark-gray
+}
+
+.feature-text-right-justify {
+	@apply self-end
+}
+
+.feature-text-hover {
+	@apply text-local-red
+}

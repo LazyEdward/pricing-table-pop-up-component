@@ -1,0 +1,18 @@
+/**
+ * Copyright (c) 2024 LazyEdward
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+ .banner-pricing-container {
+	@apply pb-[10px] flex justify-center items-center
+ }
+
+ .banner-pricing-currency {
+	@apply pr-[5px] text-[16px] text-local-white font-medium
+ }
+
+ .banner-pricing-price {
+	@apply h-[34px] text-[34px] text-local-white font-medium
+ }

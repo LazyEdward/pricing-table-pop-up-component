@@ -1,0 +1,14 @@
+/**
+ * Copyright (c) 2024 LazyEdward
+ * 
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/MIT
+ */
+
+.pricing-container {
+	@apply h-[390px] flex justify-center
+}
+
+.pricing-inner-container {
+	@apply gap-[19px] flex justify-center items-center shrink-0
+}
